@@ -1,0 +1,6 @@
+/* button design */
+
+.btn-design:hover {
+  background-color: black;
+  color: white;
+}

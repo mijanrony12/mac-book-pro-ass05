@@ -1,4 +1,5 @@
 
+//get amount total.
 function getMemoryTotal(gettotal,isUpDown) {
     const total = document.getElementById(gettotal);
     const getTotal = total.innerText;

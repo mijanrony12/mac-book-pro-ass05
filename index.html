@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mac Book Pro</title>
+    <!-- style sheet connect -->
+    <link rel="stylesheet" href="./style.css">
      <!-- use bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -36,8 +38,8 @@
                       <section  class="mt-4">
                           <div>
                               <h5>Memory</h5>
-                              <button id="memory-8gb">8GB unified memory</button>
-                              <button id="memory-16gb">16GB unified memory</button>
+                              <button id="memory-8gb" class="btn-design">8GB unified memory</button>
+                              <button id="memory-16gb" class="btn-design">16GB unified memory</button>
                           </div>
                       </section>
                     <!-- memory section ends here -->
@@ -46,9 +48,9 @@
                       <section  class="mt-4">
                           <div>
                               <h5>Storage</h5>
-                              <button id="storage-256gb">256GB SSD storage</button>
-                              <button id="storage-512gb">512GB SSD storage</button>
-                              <button id="storage-1tb">1TB SSD storage</button>
+                              <button id="storage-256gb" class="btn-design">256GB SSD storage</button>
+                              <button id="storage-512gb" class="btn-design">512GB SSD storage</button>
+                              <button id="storage-1tb" class="btn-design">1TB SSD storage</button>
                               
                           </div>
                       </section>
@@ -58,19 +60,20 @@
                       <section  class="mt-4">
                           <div>
                               <h5>Choose your delivery option</h5>
-                              <button id="delivery">friday, Aug 25 FREE Prime Delivery</button>
-                              <button id="delivery-charge">friday, Aug 21 Delivery Charge $20</button>
+                              <button id="delivery" class="btn-design">friday, Aug 25 FREE Prime Delivery</button>
+                              <button id="delivery-charge" class="btn-design">friday, Aug 21 Delivery Charge $20</button>
                               
                           </div>
                       </section>
                     <!-- delivery buttion section starts here -->
 
-                        <!-- count section starts -->
+                        <!-- total count section starts -->
                       <section  class="mt-5">
                           <div class="row">
                               <div class="col-6">
                                   <div class="row">
                                       <div class="col-8">
+                                       
                                           <h6>Best Price</h6>
                                           <h6>Extra Memory Cost:</h6>
                                           <h6>Extra storage Cost:</h6>
@@ -79,6 +82,7 @@
                                           <h6>Total Price</h6>
                                       </div>
                                       <div class="col-4">
+                                       
                                           <h6>$<span id="set-total">1299</span> </h6>
                                           <h6>$<span id="memory-total">0</span> </h6>
                                           <h6>$<span id="storage-total">0</span> </h6>
@@ -90,7 +94,7 @@
                               </div>
                           </div>
                       </section>
-                    <!-- count section ends -->
+                    <!-- total count section ends -->
 
                     <!-- final Amount section starts -->
                       <section  class="mt-4">
