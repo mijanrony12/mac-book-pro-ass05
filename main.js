@@ -34,7 +34,7 @@ function calculateTotal() {
     const findTotal = parseInt(document.getElementById('sub-total').innerText);
     const checkTotal = parseInt(document.getElementById('total').innerText);
      
-    //Total count
+    //Total count and set value.
     const subTotal = setTotal + memoryTotal + storageTotal + chargeTotal;
     document.getElementById('sub-total').innerText = subTotal;
     document.getElementById('total').innerText = subTotal;
@@ -80,6 +80,7 @@ document.getElementById('delivery-charge').addEventListener('click', function ()
 
 document.getElementById('apply-btn').addEventListener('click', function () {
     const getInputValue = document.getElementById('inputValue').value;
+    //check.
     if (getInputValue == 'stevekaku')
     {
         const getInnerValue = document.getElementById('total').innerText;
