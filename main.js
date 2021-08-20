@@ -2,6 +2,8 @@
 function getMemoryTotal(gettotal,isUpDown) {
     const total = document.getElementById(gettotal);
     const getTotal = total.innerText;
+
+    //check condition.
     if (isUpDown == true)
     {
         total.innerText = '0';
@@ -24,13 +26,15 @@ function getMemoryTotal(gettotal,isUpDown) {
 //calculateTotal.
 
 function calculateTotal() {
+    //access from HTML file
     const setTotal = parseInt(document.getElementById('set-total').innerText);
     const memoryTotal = parseInt(document.getElementById('memory-total').innerText);
     const storageTotal = parseInt(document.getElementById('storage-total').innerText);
     const chargeTotal = parseInt(document.getElementById('charge-total').innerText);
     const findTotal = parseInt(document.getElementById('sub-total').innerText);
     const checkTotal = parseInt(document.getElementById('total').innerText);
-
+     
+    //Total count
     const subTotal = setTotal + memoryTotal + storageTotal + chargeTotal;
     document.getElementById('sub-total').innerText = subTotal;
     document.getElementById('total').innerText = subTotal;
@@ -41,8 +45,8 @@ function calculateTotal() {
 
 document.getElementById('memory-8gb').addEventListener('click', function () {
     
-    getMemoryTotal('memory-total',true)
-})
+    getMemoryTotal('memory-total', true)
+});
 
 document.getElementById('memory-16gb').addEventListener('click', function () {
     getMemoryTotal('memory-total', false)
@@ -52,10 +56,12 @@ document.getElementById('memory-16gb').addEventListener('click', function () {
 
 document.getElementById('storage-256gb').addEventListener('click', function () {
     getMemoryTotal('storage-total', true)
-})
+});
+
 document.getElementById('storage-512gb').addEventListener('click', function () {
-    getMemoryTotal('storage-total', )
-})
+    getMemoryTotal('storage-total',)
+});
+
 document.getElementById('storage-1tb').addEventListener('click', function () {
     getMemoryTotal('storage-total', false)
 })
@@ -63,11 +69,12 @@ document.getElementById('storage-1tb').addEventListener('click', function () {
 //add event with delivery charge.
 
 document.getElementById('delivery').addEventListener('click', function () {
-     getMemoryTotal('charge-total',true)
-})
+    getMemoryTotal('charge-total', true)
+});
+
 document.getElementById('delivery-charge').addEventListener('click', function () {
-    getMemoryTotal('charge-total','charge')
-})
+    getMemoryTotal('charge-total', 'charge')
+});
 
 // add event for apply button.
 
@@ -79,11 +86,11 @@ document.getElementById('apply-btn').addEventListener('click', function () {
         const perchentage = getInnerValue * 20 / 100;
        const finalResult= getInnerValue - perchentage;
         document.getElementById('total').innerText = finalResult;
+        document.getElementById('inputValue').value = '';
+    }
+    else
+    {
+        alert('plz give me proper code');
     }
 });
 
-
-
-// const total = document.getElementById('memory-total');
-    // const getTotal = total.innerText;
-    // total.innerText = '0';
