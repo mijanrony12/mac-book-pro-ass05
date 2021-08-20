@@ -33,24 +33,24 @@
                       <section  class="mt-4">
                           <div>
                               <h5>Memory</h5>
-                              <button>8GB unified memory</button>
-                              <button>16GB unified memory</button>
+                              <button id="memory-8gb">8GB unified memory</button>
+                              <button id="memory-16gb">16GB unified memory</button>
                           </div>
                       </section>
                       <section  class="mt-4">
                           <div>
                               <h5>Storage</h5>
-                              <button>256GB SSD storage</button>
-                              <button>512GB SSD storage</button>
-                              <button>1TB SSD storage</button>
+                              <button id="storage-256gb">256GB SSD storage</button>
+                              <button id="storage-512gb">512GB SSD storage</button>
+                              <button id="storage-1tb">1TB SSD storage</button>
                               
                           </div>
                       </section>
                       <section  class="mt-4">
                           <div>
                               <h5>Choose your delivery option</h5>
-                              <button>friday, Aug 25 FREE Prime Delivery</button>
-                              <button>friday, Aug 21 Delivery Charge $20</button>
+                              <button id="delivery">friday, Aug 25 FREE Prime Delivery</button>
+                              <button id="delivery-charge">friday, Aug 21 Delivery Charge $20</button>
                               
                           </div>
                       </section>
@@ -68,12 +68,12 @@
                                           <h6>Total Price</h6>
                                       </div>
                                       <div class="col-4">
-                                          <h6>$<span>1299</span> </h6>
-                                          <h6>$<span>0</span> </h6>
-                                          <h6>$<span>0</span> </h6>
-                                          <h6>$<span>0</span> </h6>
+                                          <h6>$<span id="set-total">1299</span> </h6>
+                                          <h6>$<span id="memory-total">0</span> </h6>
+                                          <h6>$<span id="storage-total">0</span> </h6>
+                                          <h6>$<span id="charge-total">0</span> </h6>
                                           <hr>
-                                           <h6>$<span>1299</span> </h6>
+                                           <h6>$<span id="sub-total">1299</span> </h6>
                                       </div>
                                   </div>
                               </div>
@@ -82,8 +82,8 @@
                       <section  class="mt-4">
                           <div>
                               <h6>Add Promo Code</h6>
-                              <input type="text">
-                              <button>Apply</button>
+                              <input id="inputValue" type="text">
+                              <button id="apply-btn">Apply</button>
                           </div>
                       </section>
                     </div>
@@ -96,7 +96,7 @@
                         
                     </div>
                     <div class="col-7">
-                        <h2>Total: $1299</h2>
+                        <h2>Total: $ <span id="total">1299</span> </h2>
                     </div>
                 </div>
             </section>
